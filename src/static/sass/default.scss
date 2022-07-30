@@ -1,0 +1,168 @@
+/* Dark theme */
+$light_color: #FFF;
+$dark_theme: #111111;
+$dark_item_background: #050408;
+$active_dark_background: #8053fa;
+$dark_theme_border: #e8e8e830;
+
+/* Light theme */
+$light_theme: #FFF;
+$dark_color: #363636;
+$light_item_background: #FFF;
+$active_light_background: #2eaac1;
+$light_theme_border: #e8e8e8;
+
+
+/*==== Default =====*/
+$borderColor: #e8e8e8;
+$montserrat: 'Montserrat', sans-serif;
+$robotoSlab: 'Roboto Slab', serif;
+$big_text_size: 2rem;
+$middle_text_size: 1.15rem;
+$small_text_size: 1.1rem;
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100%;
+  margin-top: 80px;
+}
+
+body {
+  font-family: $montserrat;
+  font-size: 16px;
+  color: #FFFFFF;
+  margin: 0;
+  padding: 0;
+  background: $dark_theme;
+  z-index: 5;
+  &.hidden{
+    overflow: hidden;
+  }
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  transition: all .2s;
+}
+
+a{
+  color: $dark_color;
+  text-decoration: none;
+  cursor: pointer;
+}
+input:focus {
+  outline: none;
+}
+textarea:focus {
+  outline: none;
+}
+.container{
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+}
+@media screen and (max-width: 1300px) {
+  .container{
+    padding: 0 2.5%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .container{
+    padding: 0 4.5%;
+  }
+}
+.section{
+  width: 100%;
+  height: 100%;
+  // min-height: 100vh;
+  padding-top: 10%;
+}
+.section#about{
+  padding-top: 2.5%;
+}
+@media screen and (max-width: 1000px) {
+  .section#contact{
+    min-height: 105vh;
+    padding-bottom: 10%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .section{
+    min-height: auto;
+  }
+  .section#contact{
+    min-height: auto;
+  }
+}
+@media screen and (max-width: 600px) {
+  .section#contact{
+    min-height: auto;
+  }
+}
+::-webkit-scrollbar {
+  width: 8px;
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+  background: $dark_color;
+}
+
+.heading_block{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  .heading{
+    min-width: 25%;
+    text-align: center;
+  }
+  hr{
+    width: 100%;
+    height: 2px;
+    background: $light_color;
+  }
+}
+@media screen and (max-width: 900px){
+  .heading_block{
+    hr{
+      display: none;
+    }
+    .heading{
+      min-width: 100%;
+      text-align: inherit;
+      &.right{
+        text-align: right;
+      }
+    }
+  }
+}
+
+
+.heading{
+  font-family: $robotoSlab;
+  font-size: $big_text_size;
+  font-weight: 900;
+}
+.container_data{
+  padding-top: 10%;
+}
+
+textarea{
+  resize: vertical;
+}
+
+.why_are_me_logo{
+  margin-top: -15%
+}
+

@@ -1,0 +1,107 @@
+/*==== Light mode =====*/
+.light{
+  background: $light_theme;
+  color: $dark_color;
+  a{
+    color: $dark_color;
+  }
+  ::-webkit-scrollbar {
+    width: 8px;
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb:vertical {
+    background: $light_theme;
+  }
+  .header{
+    background: $light_theme;
+  }
+  .nav_link{
+    color: $dark_color;
+    &::after{
+      background: $dark_color;
+    }
+    &._active_link{
+      color: $active_light_background;
+      &:after{
+        background: $active_light_background;
+      }
+    }
+  }
+  .heading_block{
+    hr{
+      background: $dark_color;
+    }
+  }
+  .header_logo{
+    color: $dark_color;
+  }
+
+  /* Why me section (2 sections) */
+  .why_me_block__item_data{
+    .item_data__number{
+      background: $active_light_background;
+    }
+    .item_data__text{
+      color: #6e757d;
+      .heading{
+        color: $dark_color;
+      }
+    }
+  }
+
+  /* Technology section (3 section) */
+  .knowledge_category__item{
+    background: $light_item_background;
+    border: 2px solid $light_theme_border;
+    color: $dark_color;
+    &._active{
+      background: $active_light_background;
+      color: white;
+      border: 0;
+    }
+  }
+  .technology_item{
+    background: $light_item_background;
+    border: 1px solid $light_theme_border;
+    &:hover{
+      box-shadow: 0 6px 26px -2px $light_theme_border;
+    }
+
+  }
+  .technology_item__heading{
+    color: $dark_color;
+  }
+  .form{
+    background: $active_light_background;
+  }
+  .footer{
+    background: $light_item_background;
+  }
+  .footer_nav__item{
+    color: $dark_color;
+  }
+  /* Footer */
+
+  /* Переключатель темы */
+  .theme_switcher{
+    background: $dark_item_background;
+    border: 1px solid #FFFFFF;
+  }
+  /* Уведомление после заявки */
+  .notification{
+    background: $active_light_background;
+  }
+
+  .swiper-pagination-bullet{
+    background: $dark_item_background;
+    &-active{
+      background: $active_light_background;
+    }
+  }
+  .slide_container__main_photo {
+    .slide_information__heading{
+      color: $light_color;
+    }
+  }
+}
